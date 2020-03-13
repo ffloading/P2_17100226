@@ -1,0 +1,28 @@
+.main-form{
+    width: 450px;
+    margin: auto;
+}
+#btnSubmit
+{
+    width: 150px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#image
+{
+    float: right;
+}
+:root
+{
+    --url : url(https://besthqwallpapers.com/Uploads/27-12-2018/75846/thumb2-deportivo-toluca-fc-4k-logo-creative-art-red-and-white-checkered-flag.jpg);
+}
+#Wallpaper
+{
+    background-image: var(--url);
+    
+}
+
+
+
