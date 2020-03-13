@@ -45,20 +45,20 @@
             </div>
         </div>
     </div>
-
+<div id="form1">
     <form action="" class="main-form needs-validation" novalidate id="formPrincipal">
         <div class="row">
             <div class="col-sm-3 col-md-4 col-lg-5 col-xl-6">
                 <div class="form-group">
                     <label for="username">Nombre(s):</label>
-                    <input type="text" name="Nombre" id="Nombre" class="form-control" >
+                    <input type="text" name="Nombre" id="Nombre" class="form-control" required >
                     
                 </div>
             </div>
             <div class="col-sm-3 col-md-4 col-lg-5 col-xl-6">
                 <div class="form-group">
                     <label for="Apellido">Apellido</label>
-                    <input type="text" name="Apellido" id="Apellido" class="form-control" >
+                    <input type="text" name="Apellido" id="Apellido" class="form-control"  required>
                 </div>
             </div>
         </div>
@@ -76,14 +76,14 @@
             <div class="row">
                 <div class="col-sm-6 col-md-8 col-lg-10 col-xl-12">
                     <label for="Password">Contraseña</label>
-                    <input type="password" name="password" id="password" class="form-control">
+                    <input type="password" name="password" id="password" class="form-control" required>
                 </div>
             </div>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-6 col-md-8 col-lg-10 col-xl-12">
                     <label for="gender" id="gender"> Gender</label>
-                    <select name="gender" id="gender" class="form-control">
+                    <select name="gender" id="gender" class="form-control" required>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                 </div>        
@@ -91,11 +91,12 @@
         
         </select>
         <div class="form-check">
-            <input type="checkbox" id="accept-terms" class="form-check-input">
+            <input type="checkbox" id="accept-terms" class="form-check-input" required> 
             <label for="accept-terms" class="form-check-label">Accept terms &amp; Conditions</label>
         </div>
         <button type="submit" class="btn btn-outline-primary" id="btnSubmit">Aceptar<i type="submit" class="gg-chevron-right-r" id="image"></i></button>
     </form>
+</div>
 
 
 <script src="/Bootstrap/popper-core-2.1.0/src/popper.js"></script>
