@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Formulario con servidor</title>
+    <link rel="stylesheet" href="./css/estilosBootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimun-scale=1.0">
+    <link href='https://css.gg/chevron-right-r.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    <nav class="navbar navbar-expand-lg navbar-expand-btnMenu navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Codeux</a>
+      <button name="btnMenu" class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+          <span class="navbar-toggler-icon"> </span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item"> 
+                <a href="#" class="nav-link">Clientes</a>
+            </li>
+            <li class="nav-item"> 
+                <a href="#" class="nav-link">Productos</a>
+            </li>
+        </ul>
+     </div>
+    </nav>
+    <div class="modal" id="modalDemo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Please confirm!</h2>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>Esto es el body del modal te gusta?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="form1">
+    <form action="" class="main-form needs-validation" novalidate id="formPrincipal">
+        <div class="row">
+            <div class="col-sm-3 col-md-4 col-lg-5 col-xl-6">
+                <div class="form-group">
+                    <label for="username">Nombre(s):</label>
+                    <input type="text" name="Nombre" id="Nombre" class="form-control" required >
+                    
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-4 col-lg-5 col-xl-6">
+                <div class="form-group">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="Apellido" id="Apellido" class="form-control"  required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-10 col-xl-12">
+                    <label for="Username">Username</label>
+                    <input type="text" name="username" id="username" class="form-control" required >
+                    <div class="invalid-feedback">Prueba con otro nombre de usuario [x]</div>
+                    <div class="valid-feedback">Suena bien</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-10 col-xl-12">
+                    <label for="Password">Contraseña</label>
+                    <input type="password" name="password" id="password" class="form-control" required>
+                </div>
+            </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-10 col-xl-12">
+                    <label for="gender" id="gender"> Gender</label>
+                    <select name="gender" id="gender" class="form-control" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                </div>        
+            </div>
+        
+        </select>
+        <div class="form-check">
+            <input type="checkbox" id="accept-terms" class="form-check-input" required> 
+            <label for="accept-terms" class="form-check-label">Accept terms &amp; Conditions</label>
+        </div>
+        <button type="submit" class="btn btn-outline-primary" id="btnSubmit">Aceptar<i type="submit" class="gg-chevron-right-r" id="image"></i></button>
+    </form>
+    
+</div>
+
+<script src="popper-core-2.1.0/src/popper.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    var form = document.querySelector('.needs-validation')
+
+    form.addEventListener('submit',function(event) { 
+        if(form.checkValidity() === false){
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Esta tarea está basada en el proyecto, que estamos empleando, ahorita por lo pronto se pone una vista
+previa en lo cual conlleva el poder interactuar con las dataTable que nos proporciona esta libreria de
+js.
+
+Para visualizarse tendrá que obtener los siguientes componentes:
+-XAMMP con sus servicios de apache y mysql, que hará un intermediario para conectarse a la bdd.
+-Alojar el documento en la ruta donde esté el "c://xammp/htdocs" para poder ejecutarlo desde esa ruta en el explorador que se esté utilizando.
+-Probablemente el nombre de la base de datos se tendrá que modificar para que no marque errores en cuanto a la conexión.
+
+atte: 17100226 | Fernando González Rodríguez.

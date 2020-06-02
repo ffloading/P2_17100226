@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../aElementos/css/bootstrap.css">
+    <title>Refaccionaria FG</title>
+</head>
+<body>
+<div id="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Refaccionaria FG</a>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <a id="btnSearch" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"></i></a>
+        </form>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Empleados.html">Empleados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Provedores</a>
+              </li>
+            </ul>
+      </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" id="hamb" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" id="hamb"></span>
+            </button>
+      </div>
+    </div>
+
+      </nav>
+      
+
+    
+
+<script src="../../aElementos/popper-core-2.1.0/src/popper.js"></script>
+<script src="../../aElementos/js/jquery-3.4.1.min.js"></script>
+<script src="../../aElementos/js/bootstrap.min.js"></script>
+<script>
+    var form = document.querySelector('.needs-validation')
+
+    form.addEventListener('submit',function(event) { 
+        if(form.checkValidity() === false){
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    })
+</script>
+</body>
+</html>
